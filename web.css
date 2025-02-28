@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(laa.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 22px;
+    color:white
+}
+
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.latar-container {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.latar-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Warna hitam transparan */
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.461); /* Latar belakang putih transparan */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin:auto;
+    overflow: auto;
+    color: #000000;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+.content {
+    text-align: justify;
+    font-size: 16px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent; 
+}
+
+.nav-link.active {
+    border-bottom: 3px solid rgb(255, 255, 255); 
+}
