@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const webBTN = document.getElementById("webBTN");
     const loginBTN = document.getElementById("loginBTN");
     const bookBTN = document.getElementById("bookBTN");
+    
     const mainContent = document.getElementById("main-content");
     const links = document.querySelectorAll(".nav-link");
     const currentPage = window.location.pathname.split("/").pop(); 
@@ -59,26 +60,155 @@ document.addEventListener("DOMContentLoaded", function () {
                     background-attachment: fixed;
                     color:rgb(0, 0, 0);
                 }
+                
                 .book-section {
                     text-align: center;
                     color: rgb(255, 255, 255);
                 }
             </style>
-            <section class="book-section">
-                <h2>Our Books</h2>
-                 <div class="book-container">
-                     <div class="book"><img src="maling.jpg" alt="Buku 1"><p>Malioboro at Midnight</p></div>
-                     <div class="book"><img src="sahabat.jpg" alt="Buku 2"><p>Sahabat Baru Naira</p></div>
-                     <div class="book"><img src="jomblo.jpg" alt="Buku 3"><p>Jomblo Ngenest</p></div>
-                     <div class="book"><img src="lupa.jpg" alt="Buku 4"><p>Forget me not, Can I Forget You</p></div>                         <div class="book"><img src="yeah.jpg" alt="Buku 5"><p>Dilan 2 : 1991</p></div>
-                     <div class="book"><img src="kiss.jpg" alt="Buku 6"><p>Kiss the Sun</p></div>
-                     <div class="book"><img src="ipas.jpg" alt="Buku 7"><p>Proyek Ilmu Pengetahuan Alam dan Sosial</p></div>
-                     <div class="book"><img src="desain.jpg" alt="Buku 8"><p>Desain Media Interaktif</p></div>
-                     <div class="book"><img src="dasar.jpg" alt="Buku 9"><p>Dasar dasar pengembangan perangkat lunak dan gim -  kelas 10</p></div>
-                     <div class="book"><img src="lunak.jpg" alt="Buku 10"><p>Pemodelan Perangkat Lunak - Kelas 11</p></div>
-                     <div class="book"><img src="sejarah.jpg" alt="Buku 11"><p>Sejarah</p></div>
+    <div class="pos">
+    <section class="book-section">
+        <h2>Our Books</h2>
+         <div class="book-container">
+             <div class="card">
+                 <div class="card-image">
+                     <img src="maling.jpg" alt="judul buku">
                  </div>
-            </section>
+                 <div class="card-details">
+                     <h3 class="book-title">Malioboro At Night</h3>
+                     <p class="book-details">Penulis : Skysphire</p>
+                     <p class="book-details">Tahun Terbit : 2023</p>
+                 </div>
+                 
+             </div>
+             <div class="card">
+                <div class="card-image">
+                    <img src="sahabat.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Sahabat Baru Naira</h3>
+                    <p class="book-details">Penulis : RisTee</p>
+                    <p class="book-details">Tahun Terbit : 2017</p>
+                </div>
+                
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="yeah.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Dilan 2 </h3>
+                    <p class="book-details">Penulis : Pidi Baiq</p>
+                    <p class="book-details">Tahun Terbit : 1991</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="jomblo.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Jomblo Ngenest</h3>
+                    <p class="book-details">Penulis : Pandu Pandaa</p>
+                    <p class="book-details">Tahun Terbit : 2021</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="lupa.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Forget Me Not, Can i Forget You</h3>
+                    <p class="book-details">Penulis : Indriani Taslim</p>
+                    <p class="book-details">Tahun Terbit : 2021</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="yeah.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Yeah</h3>
+                    <p class="book-details">Penulis : yeah</p>
+                    <p class="book-details">Tahun Terbit : XXXX</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="kiss.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Kiss The Sun</h3>
+                    <p class="book-details">Penulis : Awie Awan</p>
+                    <p class="book-details">Tahun Terbit : 2021</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="ipas.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Proyek Ilmu Pengetahuan Alam dan Sosial</h3>
+                    <p class="book-details">Penulis : Indayatmi, S.Pd.M.Sc</p>
+                    <p class="book-details">Tahun Terbit : 2022</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="dasar.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Dasar dasar pengembangan perangkat lunak dan gim -  kelas 10</h3>
+                    <p class="book-details">Penulis : Okta Purnawirawan | Nuning Minarsih | Ign. F. Bayu Andoro dan Hari Wibawanto
+                    </p>
+                    <p class="book-details">Tahun Terbit : 2023</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="lunak.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Pemodelan Perangkat Lunak - Kelas 11</h3>
+                    <p class="book-details">Penulis : Henry Pandia</p>
+                    <p class="book-details">Tahun Terbit : 2018</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="desain.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Desain Media Interaktif</h3>
+                    <p class="book-details">Penulis : Noviana</p>
+                    <p class="book-details">Tahun Terbit : 2013</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="sejarah.jpg" alt="judul buku">
+                </div>
+                <div class="card-details">
+                    <h3 class="book-title">Sejarah</h3>
+                    <p class="book-details">Penulis : -</p>
+                    <p class="book-details">Tahun Terbit : 2021</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+             
+        
+        
         `;
     }
 
@@ -427,7 +557,9 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             showBookPage();
         });
-    }
+    };
+
+
 
     // Event listener untuk tombol About
     if (aboutBTN) {
@@ -435,14 +567,14 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             showAboutPage();
         });
-    }
+    };
 
 if (webBTN) {
     webBTN.addEventListener("click", function (event) {
         event.preventDefault();
         showWebPage();
     });
-    }
+    };
 
 
 
@@ -451,8 +583,8 @@ if (webBTN) {
             event.preventDefault();
             showLoginPage();
         });
-    }
-
+    };
+});
     // Event listener tambahan untuk mengganti seluruh halaman dengan form login
     document.getElementById("loginBTN").addEventListener("click", function () {
         document.body.innerHTML = `
@@ -481,4 +613,3 @@ if (webBTN) {
             </div>
         `;
     });
-});
